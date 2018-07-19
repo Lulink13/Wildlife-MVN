@@ -42,7 +42,7 @@ public class GameMap
      */
     public GameMap(String nomFichierCarte){
         // Chargement de la carte
-        chargeCarte("maps/mapWildLife_100x100(1).csv");
+        chargeCarte(nomFichierCarte);
     }
     
     

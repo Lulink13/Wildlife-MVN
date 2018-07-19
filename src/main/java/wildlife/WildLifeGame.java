@@ -42,7 +42,7 @@ public class WildLifeGame
         setGameMode(modeDuJeux);
         
         // Création de la carte de jeu
-        carteDeJeu = new GameMap("");
+        carteDeJeu = new GameMap("maps/mapWildLife_100x100.csv");
         if (carteDeJeu.renvoieErreur() == true) {
             winCons.print(carteDeJeu.renvoieLogErreur());
             carteDeJeu.resetErreur();

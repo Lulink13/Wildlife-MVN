@@ -6,6 +6,11 @@ package wildlife;
  */
 public class App 
 {
+
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) 
     {
         // Création du jeu
