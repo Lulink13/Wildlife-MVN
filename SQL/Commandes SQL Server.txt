@@ -1,0 +1,16 @@
+CREATE TABLE Cartes (	IDCarte 	SMALLINT IDENTITY(0,1),
+			NomCarte 	VARCHAR(15),
+			Largeur 	SMALLINT,
+			Auteur 		VARCHAR(15));
+
+CREATE TABLE Cellules (	IDCarte 	SMALLINT,
+			CoordX 		SMALLINT,
+			CoordY 		SMALLINT,
+			IDBiome 	TINYINT,
+			Humidite 	TINYINT,
+			Vegetation 	TINYINT);
+
+CREATE TABLE Biomes (	IDBiome 	SMALLINT IDENTITY(0,1),
+			NomBiome, 	VARCHAR(15),
+			HumiditeBase 	TINYINT,
+			VegetationBase 	TINYINT);
