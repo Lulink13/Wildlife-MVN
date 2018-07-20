@@ -6,7 +6,6 @@ rem
 echo "Launcher..."
 echo "SQL Script: DB_CREATION_1.sql"
 echo ""
-pause
 
 rem Help from https://docs.microsoft.com/fr-fr/sql/relational-databases/scripting/sqlcmd-use-the-utility?view=sql-server-2017
 rem
