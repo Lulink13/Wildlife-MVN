@@ -8,7 +8,7 @@
  Script Version 0.1
 */
 
-
+DROP DATABASE wildlife;
 CREATE DATABASE wildlife;
 GO
 
