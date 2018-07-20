@@ -1,0 +1,4 @@
+Message 3701, niveau 11, état 1, serveur DESKTOP-AA2O89E, ligne 11
+Impossible de supprimer la base de données 'wildlife' car elle n'existe pas ou vous n'avez pas d'autorisation.
+Message 173, niveau 15, état 13, serveur DESKTOP-AA2O89E, ligne 3
+La définition de la colonne 'NomBiome' doit comporter un type de données.

@@ -24,7 +24,11 @@ rem Connecting to a named instance using SQL Server Authentication to interactiv
 rem sqlcmd -U MyLogin -S <ComputerName>\<InstanceName>
 rem
 
-sqlcmd -S .\MSSQLSERVER -i DB_CREATION_1.sql -o DB_CREATION_1.rpt
+rem sqlcmd -S .\MSSQLSERVER -i DB_CREATION_1.sql -o DB_CREATION_1.rpt		AUTHENTIF NE FONCTIONNE PAS
+
+sqlcmd -i DB_CREATION_1.sql -o DB_CREATION_1.rpt
+
+
 pause
 
 
