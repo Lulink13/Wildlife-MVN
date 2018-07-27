@@ -25,7 +25,7 @@ rem
 
 rem sqlcmd -S .\MSSQLSERVER -i DB_CREATION_1.sql -o DB_CREATION_1.rpt		AUTHENTIF NE FONCTIONNE PAS
 
-sqlcmd -i DB_CREATION_1.sql -o DB_CREATION_1.rpt
+sqlcmd -S DESKTOP-AA2O89E -i DB_CREATION_1.sql -o DB_CREATION_1.rpt
 
 
 pause

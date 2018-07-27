@@ -9,18 +9,19 @@
 */
 
 
+/*  T-SQL before SQL Server 2016 
 IF EXISTS(SELECT name FROM sys.databases WHERE name = 'wildlife')
 	DROP DATABASE wildlife;
+GO
+*/
+
+/* T-SQL since SQL Server 2016*/
+DROP DATABASE IF EXISTS wildlife;
 GO
 
 CREATE DATABASE wildlife;
 GO
 
-/*
-IF OBJECT_ID('wildlife', 'U') IS NOT NULL
-  DROP TABLE <schema_name, sysname, dbo>.<table_name, sysname, sample_table>
-GO
-*/
 
 
 
@@ -29,18 +30,27 @@ GO
 */
 
 /*
+IF OBJECT_ID('wildlife', 'U') IS NOT NULL
+  DROP TABLE <schema_name, sysname, dbo>.<table_name, sysname, sample_table>
+GO
+*/
+
 IF OBJECT_ID('wildlife.Cartes','U') IS NOT NULL
 	DROP TABLE wildlife.Cartes;
 GO
-*/
-IF EXISTS(SELECT * FROM wildlife.INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Cartes')
-	DROP TABLE wildlife.Cartes;
+/*
+IF EXISTS(SELECT * FROM wildlife.INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'wildlife.Cartes')
+	BEGIN
+	DROP TABLE wildlife.Cartes CASCADE;
+	COMMIT;
+	END
 GO
+*/
 
-CREATE TABLE Cartes (	IDCarte 		SMALLINT IDENTITY(0,1) PRIMARY KEY,
-						NomCarte 		VARCHAR(15),
-						Largeur 		SMALLINT,
-						Auteur 			VARCHAR(15));
+CREATE TABLE wildlife.Cartes (	IDCarte 		SMALLINT IDENTITY(0,1) PRIMARY KEY,
+								NomCarte 		VARCHAR(15),
+								Largeur 		SMALLINT,
+								Auteur 			VARCHAR(15));
 GO
 
 
